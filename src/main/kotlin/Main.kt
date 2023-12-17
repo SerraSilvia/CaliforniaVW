@@ -16,6 +16,25 @@ fun calcularPreuActual(){
 
 }
 
+fun calcularEstatPneumatics(kmPneumatics:Int, precio: Int): Int{
+    var p = precio
+
+    if (kmPneumatics>5000 && kmPneumatics<10000){
+        p = precio - 200
+    }else if ( kmPneumatics>=10000 ){
+        p = precio - 300
+    }
+    return p
+}
+fun getPriceByModel(model: Int): Int {
+    var price = 0
+    when(model) {
+        1-> price = 47500 //California Normal
+        2-> price = 73490 //California Full
+    }
+    return price
+}
+
 fun main() {
     println("BENVINGUT A TASACIÓ DE VEHICLE")
     println("escull el número de la opció de la teva VW Califòrnia:")
@@ -26,17 +45,21 @@ fun main() {
     do {
         val modelCalifornia = readln().toInt()
 
-        if (modelCalifornia==1){
+        var precioInicial = getPriceByModel(modelCalifornia);
 
-        }else if (modelCalifornia==2){
+        println("Indica'm els km dels teus pneumàtics")
+        val estatPneumatics= readln().toInt()
 
-        }else println("L'opció no existeix")
+        val precioFinal = calcularEstatPneumatics(estatPneumatics, precioInicial)
 
     }while (modelCalifornia !=3)
 
-    val precio= 73490
+
+
     println("Escriu els km de la teva California")
     val km = readln().toLong()
 
-    println("El valor actual de la teva California és:"+ calculoDegradacionVehiculo(km))
+
+    //TODO mostrar preu base i preu actual
+    println("El valor actual de la teva California és:"+ calculoDegradacionVehiculo(km,))
 }
