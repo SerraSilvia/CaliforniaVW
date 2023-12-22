@@ -1,5 +1,13 @@
 package org.example
 
+/**
+ * És una funció que retorna el preu segons l'estat del pneumàtic.
+ * @author Sivia Serra
+ * @since 22/12/2023
+ * @param kmPneumatics quilòmetres dels pneumàtics
+ * @param precio precu actual del vehicle
+ * @return preu recalculat
+ */
 fun calcularEstatPneumatics(kmPneumatics:Long, precio: Double): Double{
     var p = precio
 
@@ -10,6 +18,14 @@ fun calcularEstatPneumatics(kmPneumatics:Long, precio: Double): Double{
     }
     return p
 }
+/**
+ * És una funció que retorna el preu inicial segons el model de VW que es té per poder tasar el vehicle adequadament.
+ * @author Sivia Serra
+ * @since 22/12/2023
+ * @param model model del vehicle
+ * @param price preu del vehicle
+ * @return preu segons el model seleccionat
+ */
 fun getPriceByModel(model: Int): Double {
     var price = 0.0
     when(model) {
@@ -18,12 +34,29 @@ fun getPriceByModel(model: Int): Double {
     }
     return price
 }
-
+/**
+ * És una funció que retorna el preu del vehicle depenent de si porta portabicis o no.
+ * @author Sivia Serra
+ * @since 22/12/2023
+ * @param portabicis donarà true o false segons si porta portabicis o no
+ * @param precio preu del vehicle
+ * @return preu segons si té portabicis o no
+ */
 fun getPriceByPortabicis(portabicis: Boolean, precio: Double ): Double {
     if (portabicis) return precio + 250
 
     return precio
 }
+
+/**
+ * És una funció que retorna el valor
+ * @author Sivia Serra
+ * @since 22/12/2023
+ * @param anysVehicle anys del vehicle
+ * @param kmVehicle quilòmetress del vehicle
+ * @param precio precu actual del vehicle
+ * @return preu recalculat
+ */
 fun getPriceByYearsKm(anysVehicle: Int, kmVehicle: Long, precio: Double): Double{
     if (anysVehicle in 6..10)
         return precio - (kmVehicle * 0.0002)
@@ -33,6 +66,16 @@ fun getPriceByYearsKm(anysVehicle: Int, kmVehicle: Long, precio: Double): Double
 
     return precio
 }
+/**
+ * És una funció de benvinguda al programa amb un ascii art
+ * @author Sivia Serra
+ * @since 22/12/2023
+ * @param asciiArt anys del vehicle
+ * Es fa servir lús de colors per tenir una millor visualització de l'inici
+ * @see trimIndent()
+ * La funció trimIndent() s'encarrega d'eliminar els espais en blanc als marges d'un bloc de text sense afectar el contingut real del text.
+ * @return Benvinguda al programa
+ */
 fun printAsciiArt() {
     val asciiArt = """ 
         $BLUE_BOLD **********************************
