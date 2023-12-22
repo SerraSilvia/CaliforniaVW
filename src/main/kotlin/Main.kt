@@ -1,17 +1,9 @@
 package org.example
 
-fun calculoDegradacionVehiculo(km:Long, precio:Double): Double {
-    //funcion la cual calcula la degradacion del vehiculo conforme pasan los kms.
-    val depreciacionPorcentaje = 0.00001 //és un percentatge
-    val depreciacion:Double = km * depreciacionPorcentaje
-    val valorActual = precio - (precio * depreciacion/100)
-    return valorActual
-}
-
 fun calcularEstatPneumatics(kmPneumatics:Long, precio: Double): Double{
     var p = precio
 
-    if (kmPneumatics>5000 && kmPneumatics<10000){
+    if (kmPneumatics in 5001..9999){
         p = precio - 200
     }else if ( kmPneumatics>=10000 ){
         p = precio - 300
@@ -33,15 +25,11 @@ fun getPriceByPortabicis(portabicis: Boolean, precio: Double ): Double {
     return precio
 }
 fun getPriceByYearsKm(anysVehicle: Int, kmVehicle: Long, precio: Double): Double{
-    if (anysVehicle >= 6 && anysVehicle <= 10) {
-        var devaluacio = kmVehicle * 0.0002;
-        return precio - devaluacio
-    }
+    if (anysVehicle in 6..10)
+        return precio - (kmVehicle * 0.0002)
 
-    if (anysVehicle > 10) {
-        var devaluacio = kmVehicle * 0.0004;
-        return precio - devaluacio
-    }
+    if (anysVehicle > 10)
+        return precio - (kmVehicle * 0.0004)
 
     return precio
 }
@@ -60,13 +48,13 @@ fun printAsciiArt() {
         |   \   /     / \          / \  |-( )
         =C========C==_| ) |--------| ) _/==] _-{_}_)
          \_\_/__..  \_\_/_ \_\_/ \_\_/__.__. $RESET
-    """.trimIndent();
+    """.trimIndent()
 
-    println(asciiArt);
+    println(asciiArt)
 }
 
 fun main() {
-    printAsciiArt();
+    printAsciiArt()
     println("$BLUE_BOLD \n Escull el número de la opció de la teva VW Califòrnia: $RESET")
     println("$GREEN_BOLD 1- Grand Califòrnia")
     println(" 2- Califòrnia Full Equip")
@@ -75,7 +63,7 @@ fun main() {
     do {
         val modelCalifornia = readln().toInt()
 
-        var precio = getPriceByModel(modelCalifornia);
+        var precio = getPriceByModel(modelCalifornia)
 
         println("$BLUE_BOLD Indica'm els km dels teus pneumàtics")
         val kilometrosNeumaticos= readln().toLong()
