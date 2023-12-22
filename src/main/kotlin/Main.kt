@@ -8,15 +8,7 @@ fun calculoDegradacionVehiculo(km:Long, precio:Double): Double {
     return valorActual
 }
 
-fun calcularPreuBase(){
-
-}
-
-fun calcularPreuActual(){
-
-}
-
-fun calcularEstatPneumatics(kmPneumatics:Int, precio: Int): Int{
+fun calcularEstatPneumatics(kmPneumatics:Long, precio: Double): Double{
     var p = precio
 
     if (kmPneumatics>5000 && kmPneumatics<10000){
@@ -26,40 +18,84 @@ fun calcularEstatPneumatics(kmPneumatics:Int, precio: Int): Int{
     }
     return p
 }
-fun getPriceByModel(model: Int): Int {
-    var price = 0
+fun getPriceByModel(model: Int): Double {
+    var price = 0.0
     when(model) {
-        1-> price = 47500 //California Normal
-        2-> price = 73490 //California Full
+        1-> price = 47500.0 //California Normal
+        2-> price = 73490.0 //California Full
     }
     return price
 }
 
+fun getPriceByPortabicis(portabicis: Boolean, precio: Double ): Double {
+    if (portabicis) return precio + 250
+
+    return precio
+}
+fun getPriceByYearsKm(anysVehicle: Int, kmVehicle: Long, precio: Double): Double{
+    if (anysVehicle >= 6 && anysVehicle <= 10) {
+        var devaluacio = kmVehicle * 0.0002;
+        return precio - devaluacio
+    }
+
+    if (anysVehicle > 10) {
+        var devaluacio = kmVehicle * 0.0004;
+        return precio - devaluacio
+    }
+
+    return precio
+}
+fun printAsciiArt() {
+    val asciiArt = """ 
+        $BLUE_BOLD **********************************
+         * BENVINGUT A TASACIÓ DE VEHICLE *
+         **********************************$RESET
+         $CYAN_BOLD
+           ---------------------------.
+         `/""${'"'}${'"'}/""${'"'}${'"'}/|""|'|""||""|   ' \.
+         /    /    / |__| |__||__|      |
+        /----------=====================|
+        | \  /V\  /    _.               |
+        |()\ \W/ /()   _            _   |
+        |   \   /     / \          / \  |-( )
+        =C========C==_| ) |--------| ) _/==] _-{_}_)
+         \_\_/__..  \_\_/_ \_\_/ \_\_/__.__. $RESET
+    """.trimIndent();
+
+    println(asciiArt);
+}
+
 fun main() {
-    println("BENVINGUT A TASACIÓ DE VEHICLE")
-    println("escull el número de la opció de la teva VW Califòrnia:")
-    println("1- Grand Califòrnia")
-    println("2- Califòrnia Full Equip")
-    println("3- Sortir")
+    printAsciiArt();
+    println("$BLUE_BOLD \n Escull el número de la opció de la teva VW Califòrnia: $RESET")
+    println("$GREEN_BOLD 1- Grand Califòrnia")
+    println(" 2- Califòrnia Full Equip")
+    println(" 3- Sortir $RESET")
 
     do {
         val modelCalifornia = readln().toInt()
 
-        var precioInicial = getPriceByModel(modelCalifornia);
+        var precio = getPriceByModel(modelCalifornia);
 
-        println("Indica'm els km dels teus pneumàtics")
-        val estatPneumatics= readln().toInt()
+        println("$BLUE_BOLD Indica'm els km dels teus pneumàtics")
+        val kilometrosNeumaticos= readln().toLong()
 
-        val precioFinal = calcularEstatPneumatics(estatPneumatics, precioInicial)
+        precio = calcularEstatPneumatics(kilometrosNeumaticos, precio)
 
+        println("$BLUE_BOLD Indica'm si disposa de portabicis")
+        val portabicis = readln().toBoolean()
+
+        precio = getPriceByPortabicis(portabicis, precio)
+
+        println("$BLUE_BOLD Indica'm els anys del vehicle")
+        val anysVehicle = readln().toInt()
+
+        println("$BLUE_BOLD Indica´m els quilòmetres del vehicle")
+        val kmVehicle = readln().toLong()
+
+        precio = getPriceByYearsKm(anysVehicle, kmVehicle, precio)
+
+        print("$BLUE_BOLD El preu final del vehicle és: $precio")
     }while (modelCalifornia !=3)
 
-
-
-    println("Escriu els km de la teva California")
-    val km = readln().toLong()
-
-
-    //TODO mostrar preu base i preu actual
-    println("El valor actual de la teva California és:"+ calculoDegradacionVehiculo(km,))
 }
