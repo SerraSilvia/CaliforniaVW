@@ -1,8 +1,13 @@
-# Aplicación para tasar Volkswagen Grand California
-Aplicación donde el usuario puede tasar su Volkswagen y obtener el precio en base 
-a los kilometros, modelo, estado neumaticos.
+# Aplicació per tasar: Volkswagen Grand California
+Hem creat una aplicació on l' usuari pot tasar el seu Volkswagen y obtenir el preu
+en base a:
 
-## Generar documentación Dokka
+* **Els quilòmetres :** El quilometratge fet del vehicle.
+* **El model :** El bàsic o el full equip. 
+* **L'estat dels pneumàtics :** Saber els quilòmetres fets per saber el desgast.
+* **Portabicis equipat :** Si porta portabicis o no.
+
+## Generar documentació Dokka
 > .[!TIP].
->  Ejecuta el comando gradlew dokkaHtml desde el directorio del proyecto.
->  Recuerda que debes tener instalado el JDK en tu maquina.
+>  Executa el comando gradlew dokkaHtml des del directori del projecte.
+>  Recorda que has de tenir instal·lat el JDK en la teva màquina.

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de7e7306-fd53-492a-bee3-4b21353bc311" name="Changes" comment="Add Dokka and configuration">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="de7e7306-fd53-492a-bee3-4b21353bc311" name="Changes" comment="Add README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,8 @@
       <updated>1702631897314</updated>
       <workItem from="1702842562942" duration="6572000" />
       <workItem from="1703281651081" duration="7815000" />
-      <workItem from="1703289568956" duration="41000" />
+      <workItem from="1703289568956" duration="374000" />
+      <workItem from="1703330679531" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <option name="closed" value="true" />
@@ -163,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703289223428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add README">
+      <option name="closed" value="true" />
+      <created>1703289801362</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703289801362</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +185,7 @@
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="Add kdoc" />
     <MESSAGE value="Add Dokka and configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Dokka and configuration" />
+    <MESSAGE value="Add README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README" />
   </component>
 </project>
