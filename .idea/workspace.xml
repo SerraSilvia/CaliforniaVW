@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de7e7306-fd53-492a-bee3-4b21353bc311" name="Changes" comment="Reamke README">
-      <change afterPath="$PROJECT_DIR$/images/compramos-tu-autocaravana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/execucioCodi.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/execucioPrograma.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/funcioMain.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/funcions.JPG" afterDir="false" />
+    <list default="true" id="de7e7306-fd53-492a-bee3-4b21353bc311" name="Changes" comment="Add dokka + fix readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +127,8 @@
       <workItem from="1704017415778" duration="5690000" />
       <workItem from="1704032765192" duration="16000" />
       <workItem from="1704402016614" duration="176000" />
-      <workItem from="1704750620512" duration="1150000" />
+      <workItem from="1704750620512" duration="1241000" />
+      <workItem from="1704751897238" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <option name="closed" value="true" />
@@ -216,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704750751880</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add dokka">
+      <option name="closed" value="true" />
+      <created>1704751812758</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704751812758</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +233,7 @@
     <MESSAGE value="Add Dokka and configuration" />
     <MESSAGE value="Add README" />
     <MESSAGE value="Reamke README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reamke README" />
+    <MESSAGE value="Add dokka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dokka" />
   </component>
 </project>
