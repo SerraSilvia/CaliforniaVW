@@ -14,6 +14,8 @@ dependencies {
     dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.9.10")
 }
 
-tasks.dokkaHtml.configure {
-    outputDirectory.set(buildDir.resolve("dokka"))
-}
+    tasks.dokkaHtml.configure {
+        //outputDirectory.set(buildDir.resolve("dokka"))
+        outputDirectory.set(project.rootDir.resolve("document/dokka"))
+    }
+

@@ -1,0 +1,24 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:org.example////PointingToDeclaration/-v-w-california/org.example/index.html
+$dokka.location:org.example/ConsoleColorsKt///PointingToDeclaration/-v-w-california/org.example/-console-colors-kt/index.html
+$dokka.location:org.example/MainKt///PointingToDeclaration/-v-w-california/org.example/-main-kt/index.html
+$dokka.location:org.example/MainKt/calcularEstatPneumatics/#kotlin.Long#kotlin.Double/PointingToDeclaration/-v-w-california/org.example/-main-kt/calcular-estat-pneumatics.html
+$dokka.location:org.example/MainKt/getPriceByModel/#kotlin.Int/PointingToDeclaration/-v-w-california/org.example/-main-kt/get-price-by-model.html
+$dokka.location:org.example/MainKt/getPriceByPortabicis/#kotlin.Boolean#kotlin.Double/PointingToDeclaration/-v-w-california/org.example/-main-kt/get-price-by-portabicis.html
+$dokka.location:org.example/MainKt/getPriceByYearsKm/#kotlin.Int#kotlin.Long#kotlin.Double/PointingToDeclaration/-v-w-california/org.example/-main-kt/get-price-by-years-km.html
+$dokka.location:org.example/MainKt/main/#/PointingToDeclaration/-v-w-california/org.example/-main-kt/main.html
+$dokka.location:org.example/MainKt/printAsciiArt/#/PointingToDeclaration/-v-w-california/org.example/-main-kt/print-ascii-art.html
+$dokka.location:org.example/UtilitiesKt///PointingToDeclaration/-v-w-california/org.example/-utilities-kt/index.html
+$dokka.location:org.example/UtilitiesKt/getScan/#/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/get-scan.html
+$dokka.location:org.example/UtilitiesKt/readBoolean/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-boolean.html
+$dokka.location:org.example/UtilitiesKt/readChar/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-char.html
+$dokka.location:org.example/UtilitiesKt/readChar/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-char.html
+$dokka.location:org.example/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.Float/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-float.html
+$dokka.location:org.example/UtilitiesKt/readFloat/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-float.html
+$dokka.location:org.example/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-int.html
+$dokka.location:org.example/UtilitiesKt/readInt/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-int.html
+$dokka.location:org.example/UtilitiesKt/readSentence/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-sentence.html
+$dokka.location:org.example/UtilitiesKt/readWord/#kotlin.String#kotlin.String/PointingToDeclaration/-v-w-california/org.example/-utilities-kt/read-word.html
+org.example
+
