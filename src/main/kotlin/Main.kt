@@ -126,7 +126,7 @@ fun main() {
 
         precio = getPriceByYearsKm(anysVehicle, kmVehicle, precio)
 
-        print("$BLUE_BOLD El preu final del vehicle és: $precio")
+        print("$BLUE_BOLD El preu final del vehicle és: $precio €")
     }while (modelCalifornia !=3)
 
 }
