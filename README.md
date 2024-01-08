@@ -1,4 +1,4 @@
->![Foto de propaganda](C:\Users\Silvia\IdeaProjects\CaliforniaVW\images\compramos-tu-autocaravana.jpg)
+>![Foto de propaganda](./images/compramos-tu-autocaravana.jpg)
 
 
 # Aplicació per tasar: Volkswagen Grand California
@@ -20,16 +20,16 @@ en base a:
 
 - Funció principal:
 
->![Funció principal](C:\Users\Silvia\IdeaProjects\CaliforniaVW\images\funcioMain.JPG)
+>![Funció principal](./images/funcioMain.JPG)
 
 - Funcions de mostra:
 
->![Funcions de mostra](C:\Users\Silvia\IdeaProjects\CaliforniaVW\images\funcions.JPG)
+>![Funcions de mostra](./images/funcions.JPG)
 
 - Mostra d'execució del programa:
 
->![Execució de programa](C:\Users\Silvia\IdeaProjects\CaliforniaVW\images\execucioPrograma.JPG)
->![Execució de programa](C:\Users\Silvia\IdeaProjects\CaliforniaVW\images\execucioCodi.JPG)
+>![Execució de programa](./images/execucioPrograma.JPG)
+>![Execució de programa](./images/execucioCodi.JPG)
 
 
 ### Enllaços
